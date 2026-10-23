@@ -6,9 +6,8 @@ Status as of 23 Oct 2026. ✅ built · ✏️ built, needs Johnny's text · 💡
 
 - **What it is:** food as the way into health. Johnny shares what worked for him, the hard way.
 - **Umbrella (from Johnny's messages):** health is the whole point: body, mind, money, and the freedom to live with the least risk. Food comes first. Money and security sit under the same idea later rather than as separate pillars.
-- **Strapline options** (currently "Real food, plainly cooked"):
-  - 💡 "Feel better, spend less, risk less."
-  - 💡 "Feel better, spend less, risk less: lessons learned the hard way."
+- **Strapline:** ✅ "Feel better, spend less, risk less." (chosen 23 Oct 2026). It sits under the name in the header and in the home page title. "Real food, plainly cooked." stays as the line on the home page's label, so the food focus is still the first thing people read.
+  - Spare: "…lessons learned the hard way." for an About page or a sign-off.
 - **Voice:** see `261023 Guide Tone of Voice.md`.
 
 ## Pages

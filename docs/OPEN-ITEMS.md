@@ -7,7 +7,6 @@
 4. Sign off the Kitchen Prescription swaps, which are drafts written for the mockup.
 4a. Check the three recipes as typed up from his sheets: light copy-edits only, plus the helper cards I wrote from them. Pork Belly needs an intro and a spoons rating.
 4b. Send his helper-card mockups if they exist. The cards are modelled on the Pork Belly sheet for now.
-4c. Pick the strapline: keep "Real food, plainly cooked", or use "Feel better, spend less, risk less" (see `docs/261023 Outline Site.md`).
 
 ## Build
 5. Newsletter: pick a service (e.g. Buttondown, Substack, Mailchimp) and wire up the sign-up form. For now it says "Sign-ups open soon".
