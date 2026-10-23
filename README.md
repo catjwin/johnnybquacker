@@ -23,11 +23,16 @@ deploy.sh       build, rsync to the VPS, check the served version
 - `npm run dev` builds and serves `dist/` at http://localhost:4321.
 - `npm run deploy` (or `./deploy.sh`) ships it. Versions are `YYMMDD-a`, `-b`… per deploy that day, written to `/version.txt`.
 
-**Adding a recipe:** add `content/recipes/<slug>.json`, copying an existing one. The build generates its page at `/recipes/<slug>/` and adds it to the recipes page, and to the home page if it's among the three newest (by `date`).
+**Adding a recipe:** add `content/recipes/<slug>.json`, copying `birria-de-bertha.json` (it uses every feature). The build generates its page at `/recipes/<slug>/` and adds it to the recipes page, and to the home page if it's among the three newest (by `date`). The format, Johnny's step ladder for cooking with breaks, is explained at the top of `lib/recipes.mjs`:
 
-- Amounts go in `ingredients` as numbers (`"amount": 0.5, "unit": "cup"`) so they scale. Use `"note": "to taste"` for anything that shouldn't scale.
-- In `method`, `substitutions` and `tip`, write `{temp:425F}` for a temperature, which follows the °F/°C switch, and `{qty:2 tbsp}` for an amount, which follows the ½×…3× scale.
-- Readers' °F/°C choice is remembered in their browser. Oven temperatures convert to the nearest 10°C or 25°F; food temperatures convert exactly.
+- `spoons`: an effort rating, plus notes on what changes it.
+- `credit`, `intro`, `experience` ("From Experience"), `equipment`, `fixIt`, `tables`: optional sections.
+- `stages[].rows[]`: each row pairs `ingredients` with `steps`. `level` sets how far right the steps sit. `rule: "stop"` draws a heavy line and `rule: "optional"` a dashed one. `pace` is `stop`, `rest` or `go`.
+- `card`: the helper card, as `steps` and `keys`, sized to fit a 6 × 4 in index card.
+- Ingredient amounts are numbers (`"amount": 0.5, "unit": "tsp"`) so they scale. Mark ingredients carried over from an earlier stage with `"ref": true` so they're left out of the shopping list.
+- In any text: `**bold**`, `*italic*`, `[link](https://…)`, `{temp:425F}` (follows °F/°C) and `{qty:2 tbsp}` (follows the ½×–3× scale).
+- Readers' settings (°F/°C, text size, easy-read font, ticked steps) are remembered in their browser. "Print or save PDF" offers the full recipe, the steps only, or the helper card, with text size, a page per stage and plain black and white.
+- Placeholder recipes from the mockup sit in `content/recipes/_drafts/`. The build ignores them.
 
 **Adding an article:** copy an existing page folder under `src/pages/`, edit it, and link it from `history/index.html` and, if it should be featured, from the home page.
 

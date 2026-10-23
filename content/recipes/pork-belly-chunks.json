@@ -1,0 +1,62 @@
+{
+  "title": "Pork Belly Chunks",
+  "course": "Supper",
+  "date": "2026-10-21",
+  "summary": "Pork belly, salt and an air fryer. Forty minutes, flipped once.",
+  "time": "45 min",
+  "intro": [
+    "[Johnny: a few lines on why pork belly is on the list, what to serve it with, and a spoons rating.]"
+  ],
+  "equipment": [
+    { "item": "Air fryer" },
+    { "item": "Sharp knife", "note": "For the strips and the accordion cuts." }
+  ],
+  "stages": [
+    {
+      "title": "The Cook",
+      "where": "Air fryer, {temp:390F}",
+      "time": "About 45 minutes",
+      "rows": [
+        {
+          "level": 0,
+          "ingredients": [{ "item": "Pork belly" }],
+          "steps": ["**Slice** the pork belly into strips roughly 1 to 1½ inches wide and 12 inches long."]
+        },
+        {
+          "level": 1,
+          "steps": ["**Slice** each strip crossways, ALMOST all the way through the fat layer, every inch or so. It will look like an accordion or a slinky. This exposes the inside enough to cook thoroughly."]
+        },
+        {
+          "level": 2,
+          "ingredients": [{ "item": "Salt" }],
+          "steps": ["**Salt** lightly all over."]
+        },
+        {
+          "level": 3,
+          "steps": ["**Air fry.** Lay the strips on their sides in the fryer. Fry 20 minutes, flip onto the other side, and fry 20 minutes more."],
+          "pace": { "kind": "rest", "text": "20 minutes, flip, then 20 more." }
+        },
+        {
+          "level": 4,
+          "ingredients": [{ "item": "Seasoning", "note": "to taste" }],
+          "steps": ["**Lightly season** and serve."]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Heat** the air fryer to {temp:390F}.",
+      "**Slice** into strips 1–1½ in wide, about 12 in long.",
+      "**Slice** each strip crossways every inch, ALMOST through the fat. Accordion.",
+      "**Salt** lightly all over.",
+      "**Air fry** on their sides 20 min. Flip. 20 min more.",
+      "**Season** lightly and serve."
+    ],
+    "keys": [
+      "Strips: 1–1½ in × 12 in",
+      "Cuts: every inch, almost through",
+      "20 + flip + 20"
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "title": "La Paella",
+  "course": "Supper",
+  "date": "2026-10-22",
+  "summary": "A unique Valencian rice casserole, not just a version of risotto.",
+  "spoons": { "rating": 3 },
+  "intro": [
+    "**Key characteristics:** extra virgin olive oil, salt, rice, local ingredients and spices.",
+    "This is the national dish of Spain. It originated in Valencia about 1,100 years ago, long before electric and gas burners, as the way cooks fed the ranch and field workers in the area, using ingredients found locally."
+  ],
+  "experience": [
+    "Wait to add any **seafood** until it’s time for the rice to cook. This prevents overcooking things like shrimp, scallops and mussels.",
+    "Chicken **drippings** and water give a much richer experience, if you have them to use.",
+    "How much **EVOO and salt**? Thinly cover the bottom of your pan, and lightly salt the whole layer of oil.",
+    "How much **meat, veg**, etc.? Hard to say. Fit it to your pan. As a guide, not every spoonful “must” have protein (meat) in my opinion. I like the meat pieces to be occasional. So for a 17-inch paella pan, about 2 cups of diced meat seems to be optimum.",
+    "How much **rice**? Once all the other things are mixed together, sprinkle a layer of rice (short grain is best) about ¼ inch thick, and cover with as much liquid as the pan will hold. Stir and leave it alone.",
+    "What kind of **rice**? Best is short grain, such as Valencian rice. It absorbs more and is heartier than long grain, but only the most sensitive of eaters would ever notice the difference. Don’t overthink this and overcompensate with liquid: the liquid a long grain doesn’t absorb leaves as steam. The rice takes care of itself without your help.",
+    "How long for the crusty bottom, the **socarrat**? When the bubbles look oily, start **listening** to the pan. You want to hear a “crinkle”, like crushing tissue paper. Stop when it turns to a “crackle”, like crushing note paper: that’s when it’s starting to burn.",
+    "Dried, flaky spices such as **parsley, basil**, etc. are best added at the end of the cook, while there’s still just enough liquid to be absorbed. Otherwise their contribution may be overwhelmed and overcooked.",
+    "Dried, larger spices such as **bay leaf** are best added along with the liquid, to season evenly."
+  ],
+  "equipment": [
+    { "item": "Deep pan, at least 10 inches", "note": "Deep-dish pizza pan, cast iron pan, an official “paella” pan. Any pan at least 2 inches deep without becoming a “pot”, because it’s difficult to sear and stir in a pot. A wok will work reasonably well if that’s what you have on hand.\nIf cooking over an open flame, your pan will get filthy on the bottom, so consider cast iron." },
+    { "item": "Spatula", "note": "If going for socarrat in a normal metal pan, strong metal is best for scraping while serving.\nThe Le Creuset brand non-stick doesn’t need any scraping at all. Don’t scrape Teflon or other non-stick coatings. Coatings don’t taste good and are poisonous." }
+  ],
+  "stages": [
+    {
+      "title": "The Cook",
+      "where": "Open flame, stovetop or propane burner",
+      "heat": "High → Medium → High (optional)",
+      "rows": [
+        { "level": 0, "ingredients": [{ "item": "EVOO" }], "steps": ["**Coat** the pan."] },
+        { "level": 0, "ingredients": [{ "item": "Kosher salt" }], "steps": ["**Heat** on high."], "pace": { "kind": "go", "text": "Continue with the next steps immediately." } },
+        { "level": 1, "ingredients": [{ "item": "Meat protein" }], "steps": ["**Sear.**"] },
+        { "level": 2, "ingredients": [{ "item": "Vegetables" }], "steps": ["**Sear.**"] },
+        { "level": 3, "ingredients": [{ "item": "Seasonings" }], "steps": ["**Stir.**"] },
+        { "level": 4, "ingredients": [{ "item": "Rice" }, { "item": "Sea protein" }], "steps": ["**Stir.**"] },
+        { "level": 5, "rule": "stop", "ingredients": [{ "item": "Liquid", "note": "to cover by 1–2 inches" }], "steps": ["**Stir.**", "**Lower** the heat to medium, or allow the fire to slowly diminish."] },
+        {
+          "level": 5,
+          "rule": "stop",
+          "aside": "This is the slow cook of the rice. When the water is gone it’s ready, OR you can go on to the socarrat.",
+          "steps": ["**Let it simmer** until (about 30–45 min):\n• any remaining bubbles look oily\n• you hear slight crackling of rice on the bottom"],
+          "pace": { "kind": "rest", "text": "30–45 minute break." }
+        },
+        { "level": 5, "rule": "optional", "steps": ["**Return** to high, or build the fire up."] },
+        { "level": 5, "optional": true, "aside": "OPTIONAL", "steps": ["**Cook** 5–10 minutes, or until the crackling sound has been noticeable for a few minutes. This makes the crispy bottom, the “socarrat”."] },
+        { "level": 5, "steps": ["**Remove** from the heat. Let it sit until cool enough to serve."] }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "title": "Ingredient Ideas for YOUR Paella",
+      "intro": "*Dear Paella Policia: this delightful dish of Valencia was traditional for centuries before tomatoes arrived in Europe, so check the “originalism” stance that forbids varying the ingredients. Rice (Arabic ar-ruzz) itself was not native to Iberia (Spain and Portugal), but was introduced by Arab and Berber Muslims 200 years before this dish. Instead, delight with pride in how this dish thrives in any local pantry.*",
+      "columns": ["Proteins", "Vegetables", "Seasonings", "Liquid"],
+      "rows": [
+        ["Chicken, rabbit\n*Spain, “Paella de Tierra”*", "Lima, green, navy, Great Northern beans, tomatoes", "Saffron, paprika, rosemary, bay leaf", "Chicken broth, water"],
+        ["Brisket, brats, sausage\n*South Texas*", "Black, kidney, red, pinto beans", "Paprika, cayenne, jalapeño, black pepper", "Beef broth, water"],
+        ["Shrimp, scallops\n*Spain, “Paella de Mariscos”*", "Lima beans, green beans, peas, carrot, celery", "Saffron, paprika, rosemary, Italian herb blend", "Vegetable broth, chicken broth, water"],
+        ["Pulled pork\n*Central and North Texas*", "Pinto beans, diced potatoes", "BBQ sauce", "Water"],
+        ["Haggis, black and white puddings\n*Scotland*", "Celeriac, green beans, carrots", "Any herb blend", "Beef broth, water"],
+        ["Birria\n*Jalisco, Mexico*", "Black beans, yellow corn, tomatoes", "Chili powder, cayenne", "Beef broth, water"],
+        ["Salmon, scallops", "White beans", "", "Chicken broth, vegetable broth, water"]
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**High heat.** Coat the pan with EVOO. Salt the oil.",
+      "**Sear** the meat, then the vegetables.",
+      "**Stir** in the seasonings, a ¼-inch layer of rice, and any seafood.",
+      "**Cover** with liquid by 1–2 inches. Stir once, then leave it alone.",
+      "**Medium**, 30–45 min, until the bubbles look oily.",
+      "*Optional:* **High**, 5–10 min for socarrat. Stop at the crackle."
+    ],
+    "keys": [
+      "Rice: a ¼-inch layer",
+      "Liquid: cover by 1–2 inches",
+      "Meat: about 2 cups for a 17-inch pan",
+      "Crinkle (tissue paper) = good. Crackle (note paper) = stop."
+    ]
+  }
+}

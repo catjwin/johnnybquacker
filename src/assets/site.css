@@ -227,19 +227,30 @@ figcaption { font-family: var(--fell); font-style: italic; font-size: 16px; text
 .next__title { font-family: var(--display); font-size: 32px; line-height: 1.1; }
 
 /* ---------- Recipe ---------- */
+/* Johnny's recipe format, built for cooking with breaks: stages laid out as a "ladder"
+   (each step beside its ingredients, stepping right as the cook goes on), heavy lines at
+   safe stopping points, dashed lines before optional parts, and pace notes. */
 
+.recipe-page { --rung-step: clamp(10px, 4.5vw, 64px); }
 .recipe-photo { height: clamp(260px, 36vw, 480px); border: 1.5px solid var(--ink); }
-.stats { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 32px 0 0; padding: 0; list-style: none; }
-.stats li { flex: 0 1 180px; border: 1.5px solid var(--ink); outline: 1px solid var(--ink); outline-offset: -6px; padding: 14px 10px; display: flex; flex-direction: column; align-items: center; }
-.stats .k { font-family: var(--caps); font-size: 13px; letter-spacing: 0.2em; color: var(--muted); }
-.stats .v { font-family: var(--display); font-size: 32px; line-height: 1.15; }
-.why { max-width: 760px; margin: 36px auto 0; display: flex; flex-direction: column; gap: 6px; text-align: center; font-size: 19px; line-height: 1.6; }
+.recipe-body { display: flex; flex-direction: column; gap: 40px; padding-bottom: 72px; }
 
-.recipe { background: var(--card); border: 1.5px solid var(--ink); padding: clamp(22px, 4vw, 44px); display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start; }
-.recipe h2 { font-family: var(--display); font-size: 34px; line-height: 1.05; }
+/* Reader's text size and font (also used when printing). */
+html[data-text-size="large"] .recipe-body { font-size: 21px; }
+html[data-text-size="xlarge"] .recipe-body { font-size: 25px; }
+html[data-font="easy"] .recipe-body { font-family: 'Atkinson Hyperlegible', Verdana, sans-serif; }
 
-.recipe-controls { flex: 1 1 100%; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 36px; padding-bottom: 22px; border-bottom: 2px solid var(--ink); }
+.spoons { display: inline-flex; gap: 3px; vertical-align: middle; }
+.spoon { width: 14px; height: 30px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.recipe-card__meta .spoon { width: 9px; height: 19px; }
+.spoon-badge { display: inline-flex; align-items: center; gap: 10px; padding: 6px 14px; border: 1.5px solid var(--ink); text-decoration: none; font-family: var(--caps); font-size: 15px; letter-spacing: 0.12em; }
+.spoon-badge .spoon { color: var(--accent); }
+
+/* Controls */
+.recipe-controls { display: flex; flex-direction: column; gap: 14px; padding: 18px 20px; background: var(--card); border: 1.5px solid var(--ink); }
 .recipe-controls[hidden] { display: none; }
+.recipe-controls__row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 32px; }
+.recipe-controls__row:empty { display: none; }
 .control { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
 .control__label { font-family: var(--caps); font-size: 14px; letter-spacing: 0.16em; color: var(--muted); }
 .segmented { display: flex; border: 1.5px solid var(--ink); }
@@ -247,22 +258,115 @@ figcaption { font-family: var(--fell); font-style: italic; font-size: 16px; text
 .segmented button:first-child { border-left: 0; }
 .segmented button:hover { background: var(--panel); }
 .segmented button[aria-pressed="true"] { background: var(--accent); color: var(--paper); }
+.segmented .seg-lg { font-size: 21px; }
+.segmented .seg-xl { font-size: 26px; }
+.segmented .seg-easy { font-family: 'Atkinson Hyperlegible', Verdana, sans-serif; letter-spacing: 0; }
 .control__note { flex: 1 1 100%; font-size: 16px; font-style: italic; color: var(--muted); }
-.ingredients { flex: 1 1 320px; min-width: 0; }
-.ingredients ul { list-style: none; margin: 8px 0 0; padding: 0; }
-.ingredients li { display: flex; align-items: baseline; gap: 10px; padding-block: 9px; }
-.ingredients .leader { flex: 1 1 20px; border-bottom: 1.5px dotted var(--muted); }
-.ingredients .qty { font-family: var(--caps); letter-spacing: 0.06em; white-space: nowrap; }
-.subs { margin-top: 20px; border: 1.5px dashed var(--green); padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; font-size: 16px; line-height: 1.6; }
-.method { flex: 999 1 480px; min-width: 0; display: flex; flex-direction: column; }
-.method__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 8px; }
-.method ol { list-style: none; margin: 0; padding: 0; counter-reset: step; }
-.method li { display: flex; gap: 20px; padding-block: 16px; border-top: 1px solid var(--rule); counter-increment: step; }
-.method li::before { content: counter(step); min-width: 36px; font-family: var(--display); font-size: 40px; line-height: 1; color: var(--accent); }
-.method li:last-child { border-bottom: 1px solid var(--rule); }
-.grocer { margin-top: 22px; background: var(--green); color: var(--paper); padding: 18px 22px; display: flex; flex-direction: column; gap: 4px; font-size: 17px; line-height: 1.55; }
-.grocer .label { color: var(--gold); }
-.method .sig { align-self: flex-end; padding-top: 14px; }
+
+/* Intro, legend, shopping list, tips */
+.recipe-intro { max-width: 760px; display: flex; flex-direction: column; gap: 14px; }
+.credit { padding: 14px 18px; border-left: 4px solid var(--accent); background: var(--card); font-size: 0.9em; }
+.spoon-notes { margin: 0; padding: 10px 16px 10px 34px; background: var(--panel); font-size: 0.9em; }
+
+.legend, .shopping { border: 1.5px solid var(--ink); background: var(--card); }
+.legend summary, .shopping summary { cursor: pointer; padding: 14px 18px; min-height: 44px; font-family: var(--caps); font-size: 17px; letter-spacing: 0.1em; }
+.legend__body { padding: 0 18px 16px; display: flex; flex-direction: column; gap: 10px; font-size: 0.9em; }
+.legend__rule { display: inline-block; width: 44px; vertical-align: middle; margin-right: 6px; }
+.legend__rule--stop { border-top: 4px solid var(--ink); }
+.legend__rule--optional { border-top: 2px dashed var(--ink); }
+.shopping__list { margin: 0; padding: 0 18px 16px 40px; columns: 2 260px; column-gap: 32px; }
+.shopping__list li { padding-block: 3px; break-inside: avoid; }
+
+.experience h2, .idea-table h2, .stage__title, .helper h2 { font-family: var(--display); font-size: clamp(30px, 4vw, 40px); line-height: 1.05; }
+.experience ul { margin: 14px 0 0; padding-left: 24px; display: flex; flex-direction: column; gap: 10px; max-width: 860px; }
+.experience li { font-style: italic; }
+.experience li strong { font-style: italic; }
+
+/* Equipment & Fix It: black title bar, banded rows (as in Johnny's sheets) */
+.bar-table__title { background: var(--ink); color: var(--paper); font-family: var(--caps); font-size: 18px; letter-spacing: 0.12em; padding: 8px 14px; }
+.bar-table table { width: 100%; border-collapse: collapse; border-bottom: 1.5px solid var(--ink); }
+.bar-table th, .bar-table td { padding: 9px 14px; text-align: left; vertical-align: top; }
+.bar-table th { width: 30%; font-weight: 700; }
+.bar-table tr:nth-child(even) { background: var(--panel); }
+
+/* Ingredients (in the ladder and the shopping list) */
+.ing__note { font-style: italic; color: var(--muted); font-size: 0.9em; }
+.ing--optional::before { content: "Optional: "; font-family: var(--caps); font-size: 0.8em; letter-spacing: 0.08em; color: var(--muted); }
+.ing--ref .ing__item { font-style: italic; }
+
+/* Stage: header rows, then the ladder */
+.stage { display: flex; flex-direction: column; gap: 14px; }
+.stage__table { border: 1.5px solid var(--ink); border-bottom-width: 3px; background: var(--card); }
+.stage__meta { padding: 8px 14px; text-align: center; border-bottom: 1px solid var(--ink); }
+.stage__meta:nth-of-type(2) { font-weight: 700; }
+.stage__heads { display: grid; grid-template-columns: minmax(0, 30%) minmax(0, 1fr); border-bottom: 1.5px solid var(--ink); font-family: var(--caps); font-size: 13px; letter-spacing: 0.16em; color: var(--muted); }
+.stage__heads span { padding: 6px 14px; }
+
+.rung { display: grid; grid-template-columns: minmax(0, 30%) minmax(0, 1fr); border-bottom: 1px solid var(--rule); }
+.rung--stop { border-bottom: 4px solid var(--ink); }
+.rung--optional { border-bottom: 2px dashed var(--ink); }
+.rung__ing { padding: 10px 14px; border-right: 1.5px solid var(--ink); }
+.rung__ing ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.rung__aside { margin-top: 6px; font-style: italic; }
+.rung__do { margin-left: calc(var(--level) * var(--rung-step)); border-left: 1.5px solid var(--ink); padding: 10px 14px; display: flex; gap: 14px; align-items: flex-start; justify-content: space-between; }
+.rung:has(.rung__ing:empty) .rung__ing { border-right-color: transparent; }
+.rung__steps { display: flex; flex-direction: column; gap: 8px; }
+.rung--optional-part .rung__aside { font-family: var(--caps); font-style: normal; letter-spacing: 0.12em; }
+.rung.is-done .rung__ing, .rung.is-done .rung__steps { opacity: 0.45; }
+
+.tick { flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 4px; font-family: var(--caps); font-size: 14px; letter-spacing: 0.08em; color: var(--muted); cursor: pointer; }
+.tick[hidden] { display: none; }
+.tick input { width: 22px; height: 22px; accent-color: var(--accent); }
+
+.pace { display: inline-block; padding: 2px 10px; background: var(--panel); font-style: italic; }
+.pace__label { font-family: var(--caps); font-style: normal; font-size: 0.8em; letter-spacing: 0.12em; margin-right: 6px; }
+.pace--stop .pace__label { color: var(--green); }
+.pace--rest .pace__label { color: var(--green); }
+.pace--go { background: var(--ink); color: var(--paper); }
+.pace--go .pace__label { color: var(--gold); }
+
+.stage__foot { padding: 10px 14px; text-align: center; }
+.stage__after { display: flex; flex-direction: column; gap: 12px; max-width: 860px; }
+
+@media screen and (max-width: 699px) {
+  .recipe-page { --rung-step: 10px; }
+  .stage__heads { display: none; }
+  .rung { grid-template-columns: minmax(0, 1fr); }
+  .rung__ing { border-right: 0; padding-bottom: 0; }
+  .rung__ing:empty { display: none; }
+  .rung__ing ul { gap: 2px; }
+  .rung__ing li { font-weight: 700; }
+  .rung__do { flex-wrap: wrap; }
+}
+
+/* Extra tables (e.g. paella ideas) */
+.idea-table { display: flex; flex-direction: column; gap: 12px; }
+.idea-table__intro { max-width: 860px; }
+.scroll-x { overflow-x: auto; }
+.idea-table table { width: 100%; min-width: 620px; border-collapse: collapse; border: 1.5px solid var(--ink); background: var(--card); }
+.idea-table th { background: var(--rule); text-align: left; font-family: var(--caps); font-weight: 400; letter-spacing: 0.1em; }
+.idea-table th, .idea-table td { padding: 8px 12px; border: 1px solid var(--muted); vertical-align: top; }
+.idea-table tbody tr:nth-child(even) { background: var(--panel); }
+
+/* Helper card: an index card (6 × 4 in when printed) */
+.helper { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+.card-sheet { width: min(100%, 680px); min-height: 340px; box-sizing: border-box; background: #FFFDF7; border: 1.5px solid var(--ink); box-shadow: 6px 6px 0 var(--rule); padding: 22px 26px; display: flex; flex-direction: column; gap: 10px; font-family: 'Atkinson Hyperlegible', Verdana, sans-serif; }
+.card-sheet__head { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid var(--accent); padding-bottom: 6px; }
+.card-sheet__title { font-family: var(--display); font-size: 26px; line-height: 1.1; }
+.card-sheet__head .spoon { color: var(--accent); width: 11px; height: 24px; }
+.card-sheet__steps { margin: 0; padding-left: 26px; display: flex; flex-direction: column; gap: 4px; font-size: 16px; line-height: 1.35; }
+.card-sheet__keys { margin: auto 0 0; padding: 8px 12px; list-style: none; background: var(--panel); display: flex; flex-wrap: wrap; gap: 2px 18px; font-size: 14px; font-weight: 700; }
+.card-sheet__foot { font-size: 11px; color: var(--muted); text-align: right; }
+
+/* Print dialog */
+.print-dialog { max-width: min(520px, calc(100vw - 32px)); border: 2px solid var(--ink); background: var(--paper); color: var(--ink); padding: 24px; }
+.print-dialog::backdrop { background: rgba(26, 22, 18, 0.55); }
+.print-dialog h2 { font-family: var(--display); font-size: 30px; margin-bottom: 10px; }
+.print-dialog fieldset { border: 0; border-top: 1px solid var(--rule); margin: 0; padding: 10px 0; display: flex; flex-direction: column; gap: 4px; }
+.print-dialog legend { font-family: var(--caps); letter-spacing: 0.12em; font-size: 15px; padding: 0; }
+.print-dialog label { display: flex; align-items: center; gap: 10px; min-height: 40px; }
+.print-dialog input { width: 20px; height: 20px; accent-color: var(--accent); }
+.print-dialog__buttons { display: flex; justify-content: flex-end; gap: 12px; margin-top: 14px; }
 
 .more { display: flex; flex-wrap: wrap; gap: 16px 40px; align-items: center; justify-content: center; text-align: center; padding-block: 44px; }
 .more h2 { font-family: var(--display); font-size: 32px; line-height: 1.1; }
@@ -276,8 +380,66 @@ figcaption { font-family: var(--fell); font-style: italic; font-size: 16px; text
 .prose ol { margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 10px; }
 .prose .photo { height: 320px; border: 1.5px solid var(--ink); }
 
+/* Recipes page: spoons and cooking-with-breaks explainer */
+.prose-box { border: 1.5px solid var(--ink); background: var(--card); padding: 22px 24px; display: flex; flex-direction: column; gap: 10px; }
+.prose-box h2 { font-family: var(--display); font-size: 30px; line-height: 1.1; }
+
+/* Guide: the eating-out pocket guide (Johnny's red / green / yellow card) */
+.pocket { display: flex; flex-wrap: wrap; gap: 24px; }
+.pocket__panel { flex: 1 1 280px; min-width: 0; border: 1.5px solid var(--ink); background: var(--card); }
+.pocket__panel--watch { flex: 2 1 520px; }
+.pocket__panel h3 { padding: 10px 18px; font-family: var(--display); font-size: 30px; line-height: 1.1; color: var(--paper); }
+.pocket__panel--watch h3 { background: var(--accent); }
+.pocket__panel--yes h3 { background: var(--green); }
+.pocket__panel--if h3 { background: #C89B2C; color: var(--ink); }
+.pocket__panel h4 { font-family: var(--caps); font-weight: 700; font-size: 15px; letter-spacing: 0.14em; margin: 0 0 4px; }
+.pocket__panel ul { margin: 0 0 14px; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.pocket__panel > ul { padding: 16px 18px 6px 40px; }
+.pocket__cols { display: flex; flex-wrap: wrap; gap: 0 32px; padding: 16px 18px 4px; }
+.pocket__cols > div { flex: 1 1 220px; }
+
+@page { margin: 0.6in; }
+
 @media print {
-  .topband, .site-header, .site-footer, .more, .btn, .photo, .recipe-photo, .recipe-controls, #subscribe { display: none !important; }
-  body { background: #fff; }
-  .recipe { border: 0; padding: 0; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: #fff; font-size: 12pt; }
+  a { color: inherit; text-decoration: none; }
+  .topband, .site-header, .site-footer, .band-panel, .btn, .photo, .recipe-photo, #subscribe,
+  .recipe-controls, .legend, .tick, .print-dialog, .helper__head { display: none !important; }
+  .wrap { max-width: none; padding-inline: 0; }
+  .page-title { padding: 0 0 12pt; gap: 6pt; }
+  .page-title h1 { font-size: 30pt; }
+  .standfirst { font-size: 13pt; }
+  .recipe-page { --rung-step: 0.45in; }
+  .recipe-body { gap: 16pt; padding: 0; }
+  html[data-text-size="large"] .recipe-body { font-size: 15pt; }
+  html[data-text-size="xlarge"] .recipe-body { font-size: 18pt; }
+  .rung, .bar-table tr, .idea-table tr, .card-sheet { break-inside: avoid; }
+  .stage__title, .bar-table__title { break-after: avoid; }
+  .rung.is-done .rung__ing, .rung.is-done .rung__steps { opacity: 1; }
+  .shopping summary { padding: 6pt 10pt; }
+
+  /* The helper card prints at index-card size with a dashed cut line. */
+  .helper { break-before: page; }
+  .card-sheet { width: 6in; min-height: 4in; padding: 0.22in 0.3in; gap: 6pt; box-shadow: none; border: 1px dashed #000; }
+  .card-sheet__title { font-size: 18pt; }
+  .card-sheet__steps { font-size: 10.5pt; gap: 2pt; }
+  .card-sheet__keys { font-size: 9pt; padding: 4pt 8pt; }
+  .card-sheet--dense .card-sheet__steps { font-size: 9.5pt; }
+  .card-sheet--dense .card-sheet__keys { font-size: 8.5pt; }
+
+  .stage__meta, .stage__heads { break-after: avoid; }
+  .print-stage-pages .stage ~ .stage, .print-stage-pages.print-full .stage { break-before: page; }
+
+  .print-steps .recipe-intro, .print-steps .shopping, .print-steps .experience, .print-steps .bar-table,
+  .print-steps .idea-table, .print-steps .stage__after, .print-steps .helper { display: none !important; }
+
+  .print-card .recipe-body > :not(.helper), .print-card .page-title { display: none !important; }
+  .print-card .helper { break-before: auto; }
+
+  .print-plain .pace, .print-plain .bar-table tr, .print-plain .idea-table tr, .print-plain .idea-table th,
+  .print-plain .spoon-notes, .print-plain .card-sheet__keys, .print-plain .credit, .print-plain .stage__table,
+  .print-plain .card-sheet { background: none !important; color: #000 !important; }
+  .print-plain .pace { border: 1px solid #000; }
+  .print-plain .pace__label { color: #000 !important; }
 }

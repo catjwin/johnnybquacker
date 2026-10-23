@@ -1,0 +1,174 @@
+{
+  "title": "Birria de Bertha",
+  "course": "Supper",
+  "date": "2026-10-23",
+  "summary": "A Jalisco, Mexico style stewed meat. Enjoy it as a stew, or in tacos.",
+  "time": "3+ hours",
+  "spoons": {
+    "rating": 3,
+    "notes": [
+      "Rated 3 spoons for attention to detail and cleanup.",
+      "Rate it 4 spoons if you do the adobo and the braise without breaks."
+    ]
+  },
+  "credit": "This is just a reformatting of Bertha’s recipe and guidance from the “Bertha Cooks” YouTube channel. The [full video](https://www.youtube.com/watch?v=6aGSaCH426I) is chock full of expert advice, troubleshooting tips and invaluable wisdom. Get [her cookbook](https://berthascookbook.com) just like I did.",
+  "intro": [
+    "This is a Jalisco, Mexico style stewed meat. Enjoy it as a stew, or in tacos. It has been made since long before convenient appliances and grocery stores. Any meat will work, but the toughest and cheapest actually works best for stewing. Trust this, or go down your own rabbit holes to see why it’s true. (Or ask Bertha.)",
+    "**The key ingredient is time, and leaving it alone.**"
+  ],
+  "equipment": [
+    { "item": "Paring knife", "note": "Remove tops, veins and seeds from the peppers. Cutting onion and tomato." },
+    { "item": "Gloves", "note": "Peppers will stain your hands, and sting your eyes when you touch them even hours later." },
+    { "item": "Comal or griddle", "note": "Any good-quality pan will work (not cheap aluminum) to toast the peppers. Cast iron is best. Never use non-stick." },
+    { "item": "Tongs", "note": "Or long fingernails? For turning and handling the peppers while toasting." },
+    { "item": "Large knife", "note": "Cutting the meat into small cubes." },
+    { "item": "Large pot", "note": "Or a crockpot." },
+    { "item": "Large spoon", "note": "Stir, and dip out the fat at the end." },
+    { "item": "Large zipper bag", "note": "Or an airtight container, IF marinating the meat." },
+    { "item": "Strainer", "note": "Press the adobo through it to remove the seeds, skins and grit. Cheesecloth or a nylon bag will work too." }
+  ],
+  "fixIt": [
+    { "problem": "Tastes too sour", "fix": "Add some sugar until it’s pleasant to taste." },
+    { "problem": "Tough meat", "fix": "Slow cook (braise) longer. Time is the tenderizer." },
+    { "problem": "Liquid (soup) tastes thin or flat", "fix": "Add salt until the taste is fixed." },
+    { "problem": "Gritty texture", "fix": "The adobo was poorly strained, or not strained at all. You can strain the soup if the meat hasn’t been shredded and added back yet. Taste before that step if you want a smooth soup." }
+  ],
+  "stages": [
+    {
+      "title": "Adobo",
+      "where": "Stovetop",
+      "time": "About 15–20 minutes",
+      "rows": [
+        {
+          "level": 0,
+          "ingredients": [
+            { "amount": 6, "item": "guajillo chiles" },
+            { "amount": 4, "item": "ancho chiles" },
+            { "amount": 2, "amountMax": 3, "item": "árbol chiles", "note": "for spicy heat", "optional": true }
+          ],
+          "steps": [
+            "**Toast** the chiles on a very hot, dry griddle, comal or skillet, but do not burn them.",
+            "This will be a matter of at most a minute each side before BURNING. If they burn, start over: it cannot be fixed.",
+            "**Remove** the stems after toasting. They’re handy for handling the chiles on the heat."
+          ]
+        },
+        {
+          "level": 1,
+          "ingredients": [
+            { "amount": 2, "item": "tomatoes", "note": "Roma is best" }
+          ],
+          "steps": [
+            "**Simmer** the chiles and tomatoes in water to cover until all are soft, about 10 minutes."
+          ]
+        },
+        {
+          "level": 2,
+          "rule": "stop",
+          "ingredients": [
+            { "amount": 2, "unit": "tbsp", "item": "vinegar" },
+            { "amount": 1, "unit": "tsp", "item": "cumin powder" },
+            { "amount": 1, "unit": "tsp", "item": "Mexican oregano" },
+            { "amount": 0.5, "unit": "tsp", "item": "black pepper" },
+            { "amount": 4, "item": "cloves" },
+            { "item": "Small piece of cinnamon (canela)" }
+          ],
+          "steps": [
+            "***See Bertha for why vinegar is key to the flavor.***",
+            "**Save** back {qty:1 cup} of the simmer water.",
+            "**Blend** all the spices above with the tomatoes and chiles."
+          ],
+          "pace": { "kind": "stop", "text": "You can stop here and store the adobo if needed." }
+        },
+        {
+          "level": 2,
+          "rule": "stop",
+          "steps": [
+            "**Strain** the adobo through a sieve or mesh nylon bag. This removes the seeds and gritty texture."
+          ],
+          "pace": { "kind": "stop", "text": "You can stop here and store the adobo if needed." }
+        },
+        {
+          "level": 0,
+          "ingredients": [
+            { "amount": 2, "item": "bay leaves" },
+            { "amount": 1, "unit": "tbsp", "item": "salt", "note": "kosher is best" }
+          ],
+          "steps": [
+            "*Use these later, when braising the meat.*"
+          ]
+        }
+      ],
+      "footer": "Your adobo is safe to freeze, or store in the refrigerator. It should be fine for a week or so."
+    },
+    {
+      "title": "The Birria",
+      "where": "Stovetop, as low heat as possible for a simmer",
+      "time": "AT LEAST 3 hours, up to all day",
+      "rows": [
+        {
+          "level": 0,
+          "rule": "stop",
+          "ingredients": [
+            { "item": "The adobo", "ref": true },
+            { "item": "Cubed meat", "note": "cheap beef or goat roasts work best" }
+          ],
+          "steps": [
+            "**Coat** the meat with the paste. Put it in a bag or tight container if marinating overnight. It can marinate for days, **or not at all**."
+          ]
+        },
+        {
+          "level": 1,
+          "ingredients": [
+            { "item": "All the adobo and meat", "ref": true },
+            { "item": "A couple of bones with the marrow exposed", "note": "short ribs are ideal, for better taste and texture of the liquid", "optional": true },
+            { "item": "Water or beef/meat broth", "note": "only enough to cover the meat by about 1 inch" },
+            { "item": "The salt and bay leaves", "note": "salt to taste", "ref": true }
+          ],
+          "steps": [
+            "In a deep pot, **pour** in the water saved from the tomato-chile simmer, and enough extra water to just cover the meat.",
+            "**Bring** to a boil and immediately reduce to the lowest simmer possible.",
+            "**Cover** and let it simmer for at least 3 hours. **Bertha says, “Not boiling. WHISPERING. Then go live your life.”**"
+          ],
+          "pace": { "kind": "rest", "text": "At least 3 hours, hands off." }
+        },
+        {
+          "level": 2,
+          "steps": [
+            "**Skim** the red fat from the top and save it. It makes an excellent dip for tortillas, and a drizzle if serving as tacos instead of soup.",
+            "**Remove** the meat, shred it, and add it back to the soup."
+          ]
+        },
+        {
+          "level": 2,
+          "ingredients": [
+            { "item": "Traditional toppings: onion, cilantro (coriander leaves), lime" }
+          ],
+          "steps": [
+            "**Serve** as a soup."
+          ]
+        }
+      ],
+      "after": [
+        "If serving with tortillas, dip them in the saved red fat and fry them on a very hot comal or griddle for a few seconds on both sides. This is the traditional way of enjoying birria as a soup at the table with your family and friends.",
+        "To make **“food truck tacos”**, lay meat on one side of the tortilla and some cheese on the other. Fold it, then fry it until crispy on both sides.",
+        "If you still have reserved fat or liquid from your birria meal, it makes a flavorful base for a pot of beans. A mix of pinto and black is excellent."
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Toast** {qty:6} guajillo + {qty:4} ancho chiles (+ árbol for heat), dry pan, under a minute a side. Stem them.",
+      "**Simmer** with {qty:2} tomatoes in water to cover, about 10 min. Save {qty:1 cup} of the water.",
+      "**Blend** with {qty:2 tbsp} vinegar, {qty:1 tsp} cumin, {qty:1 tsp} oregano, {qty:1/2 tsp} pepper, {qty:4} cloves, a piece of canela. **Strain.**",
+      "**Coat** the cubed meat. Marinate for days, or not at all.",
+      "**Cover** by 1 inch with the saved water plus water or broth. {qty:2} bay leaves, {qty:1 tbsp} salt.",
+      "**Boil**, then turn it down to a whisper. Lid on, 3+ hours.",
+      "**Skim** the red fat. **Shred** the meat. **Serve.**"
+    ],
+    "keys": [
+      "Stop points: after blending, after straining, after coating",
+      "Never boiling. Whispering.",
+      "Burned chiles can’t be fixed: start over"
+    ]
+  }
+}
