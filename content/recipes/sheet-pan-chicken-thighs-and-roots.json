@@ -1,0 +1,40 @@
+{
+  "title": "Sheet-Pan Chicken Thighs & Roots",
+  "course": "Supper",
+  "date": "2026-10-23",
+  "summary": "One tray, seven ingredients, no sauce from a bottle. The weeknight supper I come back to most.",
+  "photo": "",
+  "photoNote": "Photo: the tray straight from the oven, on a wooden table",
+  "time": "45 min",
+  "yield": { "label": "Serves", "amount": 4 },
+  "stats": [
+    { "label": "Prep", "value": "10 min" },
+    { "label": "Cook", "value": "35 min" },
+    { "label": "You need", "value": "1 tray" }
+  ],
+  "why": "Skin-on thighs stay juicy, cost less than breasts and need no marinade. Everything on the tray is a whole food — the label on each should list a single ingredient.",
+  "ingredients": [
+    { "item": "Bone-in, skin-on chicken thighs", "amount": 8 },
+    { "item": "Carrots, in 2-inch batons", "amount": 4 },
+    { "item": "Parsnips, cut the same", "amount": 3 },
+    { "item": "Red onions, in wedges", "amount": 2 },
+    { "item": "Extra-virgin olive oil", "amount": 3, "unit": "tbsp" },
+    { "item": "Fresh rosemary or thyme", "amount": 4, "unit": "sprigs" },
+    { "item": "Salt and black pepper", "note": "to taste" }
+  ],
+  "substitutions": [
+    "No parsnips? Sweet potato or butternut squash.",
+    "No fresh herbs? {qty:1 tsp} dried, added with the oil."
+  ],
+  "method": [
+    "Heat the oven to {temp:425F}.",
+    "Toss the carrots, parsnips and onion with {qty:2 tbsp} of the oil and a good pinch of salt and pepper. Spread them across a large rimmed tray in one layer.",
+    "Pat the chicken dry — dry skin is crisp skin. Rub with the remaining {qty:1 tbsp} of oil, season well and nestle the thighs skin-side up among the vegetables. Tuck in the herbs.",
+    "Roast for 35–40 minutes, until the skin is deep golden and the thickest thigh reads {temp:165F} on a thermometer.",
+    "Rest for 5 minutes, then spoon the pan juices over everything and serve from the tray."
+  ],
+  "tip": {
+    "label": "At the Grocer’s",
+    "text": "The chicken label should say one thing: chicken. Skip packs that list “solution”, “broth” or “natural flavoring”."
+  }
+}

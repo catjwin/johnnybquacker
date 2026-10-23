@@ -1,0 +1,38 @@
+{
+  "title": "The Only Vinaigrette You Need",
+  "course": "Pantry",
+  "date": "2026-10-22",
+  "summary": "Five ingredients, five minutes, one jar. Make it on Sunday and it’s there all week.",
+  "photo": "",
+  "photoNote": "Photo: jar of dressing beside a bowl of leaves",
+  "time": "5 min",
+  "yield": { "label": "Makes", "amount": 0.5, "unit": "cup" },
+  "stats": [
+    { "label": "Prep", "value": "5 min" },
+    { "label": "Keeps", "value": "1 week" },
+    { "label": "You need", "value": "1 jar" }
+  ],
+  "why": "A bottle of dressing can carry a long ingredient list. This one has five, and you can see every one of them in the jar.",
+  "ingredients": [
+    { "item": "Extra-virgin olive oil", "amount": 6, "unit": "tbsp" },
+    { "item": "Red wine vinegar", "amount": 2, "unit": "tbsp" },
+    { "item": "Dijon mustard", "amount": 1, "unit": "tsp" },
+    { "item": "Small shallot, finely chopped", "amount": 1 },
+    { "item": "Salt", "note": "a good pinch" }
+  ],
+  "substitutions": [
+    "Lemon juice or sherry vinegar for the red wine vinegar.",
+    "A grated garlic clove for the shallot."
+  ],
+  "method": [
+    "Put the shallot, vinegar and salt in a jar. Leave for 5 minutes to take the bite out of the shallot.",
+    "Add the mustard and olive oil.",
+    "Put the lid on and shake hard for 10 seconds, until it turns creamy.",
+    "Taste it on a leaf, not a spoon. Add more salt or a splash more vinegar if it needs it.",
+    "Keep it in the fridge. The oil firms up when cold, so let it sit out for 10 minutes and shake again before using."
+  ],
+  "tip": {
+    "label": "At the Grocer’s",
+    "text": "Look for olive oil with a harvest date on the bottle, and buy a size you’ll finish in a couple of months."
+  }
+}

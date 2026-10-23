@@ -1,0 +1,37 @@
+{
+  "title": "Overnight Steel-Cut Oats",
+  "course": "Breakfast",
+  "date": "2026-10-21",
+  "summary": "Ten minutes the night before, a hot breakfast in the morning. No packet required.",
+  "photo": "",
+  "photoNote": "Photo: bowl of oats with berries",
+  "time": "10 min + overnight",
+  "yield": { "label": "Serves", "amount": 4 },
+  "stats": [
+    { "label": "Evening", "value": "5 min" },
+    { "label": "Morning", "value": "5–10 min" },
+    { "label": "You need", "value": "1 pan" }
+  ],
+  "why": "Steel-cut oats are whole oat kernels, chopped — nothing added. Starting them the night before takes the half-hour wait out of the morning.",
+  "ingredients": [
+    { "item": "Steel-cut oats", "amount": 1, "unit": "cup" },
+    { "item": "Water", "amount": 4, "unit": "cups" },
+    { "item": "Salt", "note": "a pinch" },
+    { "item": "Berries or chopped fruit, to serve", "amount": 1, "unit": "cup" }
+  ],
+  "substitutions": [
+    "Whole milk for half the water, for creamier oats.",
+    "Top with nuts or a spoon of plain yogurt instead of fruit."
+  ],
+  "method": [
+    "In the evening, bring the water and salt to a boil in a saucepan.",
+    "Stir in the oats and let them boil for 1 minute.",
+    "Turn off the heat, put the lid on and leave the pan on the stove overnight.",
+    "In the morning, warm the oats over medium-low heat for 5–10 minutes, stirring. Add a splash of water or milk if they’re too thick.",
+    "Serve topped with the fruit. Leftovers keep in the fridge for up to 5 days."
+  ],
+  "tip": {
+    "label": "At the Grocer’s",
+    "text": "The ingredient list should say one thing: oats. Skip the flavoured instant packets."
+  }
+}

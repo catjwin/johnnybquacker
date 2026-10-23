@@ -11,7 +11,8 @@ Dad's site on food and health: what went wrong with the American food supply, no
 A plain static site with no framework and no dependencies, so it can move to any host.
 
 ```
-src/pages/      one file per page; folders give clean URLs (recipes/x/index.html → /recipes/x/)
+content/recipes/  one JSON file per recipe; pages and cards are generated (lib/recipes.mjs)
+src/pages/      one file per page; folders give clean URLs (history/x/index.html → /history/x/)
 src/partials/   head, header, footer, signup; pulled into pages with <!-- @name key="value" -->
 src/assets/     site.css, site.js, favicon.svg
 build.mjs       src/ → dist/
@@ -22,7 +23,13 @@ deploy.sh       build, rsync to the VPS, check the served version
 - `npm run dev` builds and serves `dist/` at http://localhost:4321.
 - `npm run deploy` (or `./deploy.sh`) ships it. Versions are `YYMMDD-a`, `-b`… per deploy that day, written to `/version.txt`.
 
-**Adding a recipe or article:** copy an existing page folder, edit it, then link it from the section index (`recipes/index.html` or `history/index.html`) and, if it should be featured, from the home page.
+**Adding a recipe:** add `content/recipes/<slug>.json`, copying an existing one. The build generates its page at `/recipes/<slug>/` and adds it to the recipes page, and to the home page if it's among the three newest (by `date`).
+
+- Amounts go in `ingredients` as numbers (`"amount": 0.5, "unit": "cup"`) so they scale. Use `"note": "to taste"` for anything that shouldn't scale.
+- In `method`, `substitutions` and `tip`, write `{temp:425F}` for a temperature, which follows the °F/°C switch, and `{qty:2 tbsp}` for an amount, which follows the ½×…3× scale.
+- Readers' °F/°C choice is remembered in their browser. Oven temperatures convert to the nearest 10°C or 25°F; food temperatures convert exactly.
+
+**Adding an article:** copy an existing page folder under `src/pages/`, edit it, and link it from `history/index.html` and, if it should be featured, from the home page.
 
 ## Hosting
 

@@ -12,3 +12,9 @@
 7. Consider self-hosting the four Google Fonts so visitors aren't sent to Google.
 8. Source links for the history article.
 9. Later: move to Dad's own server (README, *Moving to Dad's own server*).
+10. **Custom editor for Dad** (decided 2026-10-23; not started). A private sign-in page on the VPS where Dad adds and edits recipes:
+    - A form for title, course, summary, yield, stats, ingredients (amount, unit, item), method steps, substitutions, tip, and a photo upload that's resized on the server.
+    - Saving writes `content/recipes/<slug>.json`, rebuilds, and publishes. He types plain numbers; the form marks temperatures and amounts as `{temp:…}` and `{qty:…}` so they scale and switch.
+    - It should also commit the content to git so nothing lives only on the server.
+    - Later it can grow to cover articles, the Kitchen Prescription and the About page.
+    - Build it in the usual winsorlabs stack (build-an-app skill) as its own small container. Moving the site to Dad's server then means moving this container as well as `dist/`.
