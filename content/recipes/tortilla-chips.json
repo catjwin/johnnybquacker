@@ -1,0 +1,60 @@
+{
+  "title": "Tortilla (or Corn) Chips",
+  "course": "Snacks",
+  "date": "2026-10-22",
+  "summary": "Corn tortillas, fried and tossed in seasoning. That’s it.",
+  "time": "About 15 min",
+  "spoons": { "rating": 2 },
+  "intro": [
+    "**Chips are just tortillas (corn) fried and tossed in seasoning. That’s it.**",
+    "If you use store-bought tortillas, look for only two ingredients: masa and water, maybe salt. Gums and fillers are crap and likely to upset your stomach. HOWEVER, if you don’t have the skill or energy to make super-perfect tortillas at home, AND you want light, crispy chips, use store-bought machine-made tortillas.",
+    "If you want strong, thick chips for dipping thick sauces or beans, make your own tortillas. Make them thick on purpose (or by accident). “Corn” chips are just a thicker, smaller shape, like the Fritos brand.",
+    "Use a shelf-stable fat, preferably one that’s solid on the shelf: **lard, tallow, coconut.** If you use those nasty refined cooking oils, your chips will go “stale” within a few hours. Made with a stable fat, they’ll stay crispy for at least a couple of weeks."
+  ],
+  "equipment": [
+    { "item": "Medium knife", "note": "To cut the tortillas." },
+    { "item": "Safety gloves", "note": "If you’re prone to clumsiness." },
+    { "item": "Fryer", "note": "A saucepan is awkward, and you need a thermometer to hold the right temperature." },
+    { "item": "Large bowl", "note": "Tossing the chips in seasoning." },
+    { "item": "Big bag or container", "note": "Storage." },
+    { "item": "Big spoon", "note": "Stirring in the fryer." }
+  ],
+  "stages": [
+    {
+      "title": "The Cook",
+      "where": "Fryer at {temp:320F}, or 1 stove burner on high",
+      "rows": [
+        {
+          "level": 0,
+          "position": "sit",
+          "ingredients": [{ "item": "Corn tortillas" }],
+          "steps": ["**Slice** into shapes for chips. Stack several to make it easier."]
+        },
+        {
+          "level": 1,
+          "position": "stand",
+          "time": "7 min a batch",
+          "ingredients": [{ "item": "Lard, tallow or coconut oil", "note": "for the fryer" }],
+          "steps": ["**Fry** in batches, 7 min, stirring with a spoon until the bubbling stops."],
+          "pace": { "kind": "go", "text": "Have the bowl and seasoning ready: the next step comes right away." }
+        },
+        {
+          "level": 2,
+          "ingredients": [{ "item": "Seasoning" }],
+          "steps": ["**Remove** to a bowl and toss with seasoning. If some aren’t done, just put them back in the fryer."]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Slice** into shapes. Perfect tortillas for crispy chips; thick, non-puffing ones for strong chips.",
+      "**Fry** 7 min, stirring, until the bubbling stops.",
+      "**Toss** with seasoning in a bowl. Not done? Back in the fryer."
+    ],
+    "keys": [
+      "Fryer: {temp:320F}",
+      "Tortillas: masa, water, maybe salt. Nothing else."
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "title": "Ranch Style Dip",
+  "course": "Dips & Dressings",
+  "date": "2026-10-22",
+  "summary": "Super easy, and far cheaper than a packet with non-food additives.",
+  "photo": "/assets/recipes/ranch-dip/cover.jpg",
+  "photoAlt": "Sour cream topped with dill, paprika and spices, ready to stir",
+  "time": "15 min, then 1 hour to rest",
+  "spoons": { "rating": 2 },
+  "yield": { "label": "Makes", "amount": 16, "unit": "oz" },
+  "intro": [
+    "This is super easy, and much less expensive than a packet that also contains non-food additives. **PLUS**, once you’re comfortable with the basic blend, you can make it your own.",
+    "My own additions: a wee bit of cayenne, just enough to barely be tasted, and a bit of paprika, which gives a nice savory base to the bright taste of the dill."
+  ],
+  "equipment": [
+    { "item": "Bowl", "note": "Large enough for the amount you want to make." },
+    { "item": "Little bowl or jar", "note": "For the spice blend." },
+    { "item": "Spatula", "note": "For getting the sour cream out of its container." },
+    { "item": "Fork, spoon or small spatula", "note": "To stir the dip." }
+  ],
+  "stages": [
+    {
+      "title": "The Blend and the Dip",
+      "where": "Kitchen counter or table",
+      "rows": [
+        {
+          "level": 0,
+          "position": "stand",
+          "rule": "stop",
+          "ingredients": [
+            { "item": "Parsley", "note": "1 part" },
+            { "item": "Onion powder", "note": "1 part" },
+            { "item": "Onion flakes or chives", "note": "1 part" },
+            { "item": "Salt", "note": "1 part (more if coarse)" },
+            { "item": "Garlic powder", "note": "½ part" },
+            { "item": "Black pepper", "note": "½ part (more if coarse)" },
+            { "item": "Dill", "note": "2 parts" }
+          ],
+          "steps": ["**Assemble** the spices all in one place."],
+          "pace": { "kind": "stop", "text": "Possible stopping point." }
+        },
+        {
+          "level": 1,
+          "position": "stand",
+          "rule": "stop",
+          "steps": ["**Mix** up the spices in a little bowl. Add whatever seems to need more, by smell."],
+          "pace": { "kind": "stop", "text": "Possible stopping point. Make a jar of blend ahead and shake it before using: heavier spices settle." }
+        },
+        {
+          "level": 2,
+          "position": "stand",
+          "rule": "stop",
+          "ingredients": [
+            { "amount": 16, "unit": "oz", "item": "sour cream or plain yogurt" },
+            { "item": "Plain cream or milk", "note": "to thin sour cream, or a little water to thin yogurt", "optional": true }
+          ],
+          "steps": ["**Mix** about {qty:2 tbsp} of the blend into the sour cream (or yogurt)."],
+          "pace": { "kind": "rest", "text": "Let it sit at least an hour, but no more than 4 hours at room temperature. Room temp is best, so the onion flakes soak up moisture." }
+        },
+        {
+          "level": 3,
+          "position": "sit",
+          "ingredients": [{ "item": "Cayenne, paprika or dried chives", "note": "to taste", "optional": true }],
+          "steps": ["**Stir and taste.** A little cayenne gives it a nip; dried chives give a milder, slightly different onion flavor."],
+          "pace": { "kind": "stop", "text": "Done. Into the fridge." }
+        }
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Blend:** equal parts parsley, onion powder, onion flakes or chives, and salt. ½ part garlic powder and black pepper. 2 parts dill.",
+      "**Options:** a little cayenne or paprika, added when you make the dip.",
+      "**Mix** about {qty:2 tbsp} of blend into {qty:16 oz} sour cream, yogurt, labneh or crème fraîche.",
+      "**Rest** at least 30 min. Taste, and add more if wanted.",
+      "**Thin** with cream, milk or buttermilk to make a dressing."
+    ],
+    "keys": [
+      "Season by smell",
+      "Keep a jar of blend; shake before using"
+    ]
+  }
+}

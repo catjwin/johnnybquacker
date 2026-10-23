@@ -1,0 +1,89 @@
+{
+  "title": "Best Cornbread Ever",
+  "course": "Bread",
+  "date": "2026-10-23",
+  "summary": "All cornmeal, no wheat.",
+  "photo": "/assets/recipes/best-cornbread/cover.jpg",
+  "photoAlt": "A round of golden cornbread in a cast-iron pan",
+  "time": "35 min",
+  "spoons": { "rating": 2 },
+  "equipment": [
+    { "item": "Large bowl" },
+    { "item": "Big spoon or spatula" },
+    { "item": "Small bowl" },
+    { "item": "Fork" },
+    { "item": "Measuring cup and spoons" },
+    { "item": "Oven-safe pan, 9–10 inches", "note": "Or a pie pan or tin." },
+    { "item": "Food brush or paper towel", "note": "To oil the pan." },
+    { "item": "Oven mitts or a thick towel" }
+  ],
+  "stages": [
+    {
+      "title": "The Bake",
+      "where": "Oven at {temp:400F}",
+      "time": "20–25 min in the oven",
+      "rows": [
+        {
+          "level": 0,
+          "position": "sit",
+          "rule": "stop",
+          "ingredients": [
+            { "amount": 2, "unit": "cups", "item": "cornmeal" },
+            { "amount": 2, "unit": "tbsp", "item": "sugar", "optional": true },
+            { "amount": 1, "unit": "tsp", "item": "salt" },
+            { "amount": 1, "unit": "tsp", "item": "baking soda" },
+            { "amount": 1, "unit": "tsp", "item": "baking powder" }
+          ],
+          "steps": ["Sugar and/or honey are optional.", "**Mix** the dry ingredients."]
+        },
+        {
+          "level": 1,
+          "position": "sit",
+          "ingredients": [
+            { "amount": 2, "item": "eggs" },
+            { "amount": 2, "unit": "tbsp", "item": "EVOO" },
+            { "amount": 2, "unit": "cups", "item": "buttermilk" },
+            { "amount": 2, "unit": "tbsp", "item": "honey", "optional": true }
+          ],
+          "steps": ["**Whisk** the wet ingredients."]
+        },
+        {
+          "level": 2,
+          "position": "sit",
+          "ingredients": [{ "item": "Extras", "note": "jalapeños, cheese, cracklins, etc.", "optional": true }],
+          "steps": ["**Mix** the wet and dry together, and add any extras."]
+        },
+        {
+          "level": 3,
+          "position": "sit",
+          "rule": "stop",
+          "steps": ["**Grease** or oil the baking pan, and pour in the batter."],
+          "pace": { "kind": "stop", "text": "All the mixing is done and the pan is oiled. This can sit for many hours; if overnight, cover and refrigerate." }
+        },
+        {
+          "level": 4,
+          "time": "20–25 min",
+          "steps": ["**Bake** 20–25 min at {temp:400F}. Use a handy spatula to get all the batter in the pan. Waste not."]
+        }
+      ]
+    }
+  ],
+  "photos": [
+    { "src": "/assets/recipes/best-cornbread/step-1.jpg", "caption": "All the mixing is done and the pan is oiled up. This can sit for many hours, but if overnight, cover and refrigerate." },
+    { "src": "/assets/recipes/best-cornbread/step-2.jpg", "caption": "Oven is at {temp:400F}. Pour the batter in and use a handy spatula to get all of it in there. Waste not." },
+    { "src": "/assets/recipes/best-cornbread/step-3.jpg", "caption": "Done." }
+  ],
+  "card": {
+    "steps": [
+      "**Mix dry:** {qty:2 cups} cornmeal, {qty:2 tbsp} sugar (optional), {qty:1 tsp} each of salt, baking soda and baking powder.",
+      "**Whisk wet:** {qty:2} eggs, {qty:2 tbsp} EVOO, {qty:2 cups} buttermilk, {qty:2 tbsp} honey (optional).",
+      "**Mix** together. Add extras: jalapeños, cheese, cracklins.",
+      "**Pour** into an oiled 9–10 inch oven-safe pan.",
+      "**Bake** at {temp:400F}, 20–25 min."
+    ],
+    "keys": [
+      "The batter can wait for hours (fridge overnight)",
+      "No wheat"
+    ]
+  }
+}

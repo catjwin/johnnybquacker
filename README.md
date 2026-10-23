@@ -27,11 +27,11 @@ deploy.sh       build, rsync to the VPS, check the served version
 
 - `spoons`: an effort rating, plus notes on what changes it.
 - `credit`, `intro`, `experience` ("From Experience"), `equipment`, `fixIt`, `tables`: optional sections.
-- `stages[].rows[]`: each row pairs `ingredients` with `steps`. `level` sets how far right the steps sit. `rule: "stop"` draws a heavy line and `rule: "optional"` a dashed one. `pace` is `stop`, `rest` or `go`.
-- `card`: the helper card, as `steps` and `keys`, sized to fit a 6 × 4 in index card.
+- `stages[].rows[]`: each row pairs `ingredients` with `steps`. `level` sets how far right the steps sit. `position` (`stand` or `sit`) and `time` label the step. `rule: "stop"` draws a heavy line and `rule: "optional"` a dashed one. `pace` is `stop`, `rest` or `go`.
+- `card`: the Quick Reference Card, as `steps` and `keys`, sized to fit a 6 × 4 in index card.
 - Ingredient amounts are numbers (`"amount": 0.5, "unit": "tsp"`) so they scale. Mark ingredients carried over from an earlier stage with `"ref": true` so they're left out of the shopping list.
 - In any text: `**bold**`, `*italic*`, `[link](https://…)`, `{temp:425F}` (follows °F/°C) and `{qty:2 tbsp}` (follows the ½×–3× scale).
-- Readers' settings (°F/°C, text size, easy-read font, ticked steps) are remembered in their browser. "Print or save PDF" offers the full recipe, the steps only, or the helper card, with text size, a page per stage and plain black and white.
+- Readers' settings (°F/°C, text size, easy-read font, ticked steps) are remembered in their browser. "Print or save PDF" offers the full recipe, the steps only, or the Quick Reference Card, with text size, a page per stage and plain black and white.
 - Placeholder recipes from the mockup sit in `content/recipes/_drafts/`. The build ignores them.
 
 **Adding an article:** copy an existing page folder under `src/pages/`, edit it, and link it from `history/index.html` and, if it should be featured, from the home page.

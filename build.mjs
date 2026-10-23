@@ -6,11 +6,12 @@
 // - A partial is <!-- @name key="value" ... --> and pulls in src/partials/name.html,
 //   replacing {{key}} with the value. nav="history" also sets {{nav_history}} so the
 //   header can mark the current section. {{version}} is available everywhere.
-//   <!-- @recipe-cards limit="3" --> is generated from the recipes, newest first.
+//   <!-- @recipe-cards limit="3" --> is generated from the recipes, newest first;
+//   <!-- @spoons n="3" --> draws spoon icons.
 
 import { readdir, readFile, writeFile, mkdir, cp, rm, stat } from 'node:fs/promises';
 import { join, dirname, relative } from 'node:path';
-import { loadRecipes, renderRecipePage, renderRecipeCards } from './lib/recipes.mjs';
+import { loadRecipes, renderRecipePage, renderRecipeCards, spoons } from './lib/recipes.mjs';
 
 const SRC = 'src';
 const OUT = 'dist';
@@ -34,6 +35,7 @@ for (const file of await readdir(join(SRC, 'partials'))) {
 const recipes = await loadRecipes('content/recipes');
 const generated = {
   'recipe-cards': (vars) => renderRecipeCards(recipes, vars.limit),
+  spoons: (vars) => spoons(Number(vars.n)),
 };
 
 function fill(text, vars) {

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- @head title="Recipes — Johnny B. Quacker" description="Simple food from real ingredients: short lists, plain methods." -->
+<!-- @head title="Recipes — Johnny B. Quacker" description="Real food you can cook in short steps, with breaks: every recipe has guided steps, a spoons rating and a Quick Reference Card." -->
 </head>
 <body>
 <!-- @header nav="recipes" -->
@@ -10,24 +10,41 @@
     <span class="kicker">Remedy No. 3 · The Kitchen</span>
     <h1>Recipes</h1>
     <div class="ornament" aria-hidden="true"><span></span></div>
-    <p class="standfirst">Short ingredient lists and plain methods. Nothing you need a chemist to pronounce.</p>
+    <p class="standfirst">Step by step. Easy does it. Relax and cook, and cook with distractions.</p>
   </section>
 
+  <div class="prose">
+    <p>Yes, you can cook genuine food for yourself and others even if your capabilities are impaired or limited. The keys to this are:</p>
+    <ol>
+      <li><strong>Think ahead of time and prepare.</strong> One of the interesting effects of physical limitations is that you tend to think ahead more than fully capable people. “I want to do this thing tomorrow, so I need a plan” tends to happen. All of these recipes lean on that automatic mindset.</li>
+      <li><strong>Become comfortable with incremental progress.</strong> Once you’re comfortable with the methods, the Quick Reference Card should be enough.</li>
+    </ol>
+    <p>These versions suit anyone with limited ability to stand around in a kitchen, for whatever reason: conditions like ME/CFS, not being able to stand for more than a few minutes, or needing assistive devices in the kitchen. They’re also handy without any impairment, if you have fussy children, pets, work from home, or other constant distractions.</p>
+    <p>I wrote all this down as I made each recipe, so they’re a bit long, to be as clear as possible and point out the very few steps where timing is important. Each step shows how to stop or pause for a break.</p>
+    <p>Take all day, or even a couple of days, and don’t get anxious about it having to be done in one big effort. The result is worth it.</p>
+  </div>
+
   <section class="wrap section section--follow">
+    <div class="section-head">
+      <h2>The Recipes</h2>
+      <p>Each one comes two ways: guided steps, and a Quick Reference Card.</p>
+    </div>
     <!-- @recipe-cards -->
   </section>
 
-  <section class="wrap section section--follow">
-    <div class="split">
-      <div class="prose-box" id="spoons">
+  <section class="wrap section section--follow" id="spoons">
+    <div class="spoon-scale">
+      <div class="spoon-scale__head">
         <h2>Spoons</h2>
-        <p>Every recipe is rated in spoons, from “spoon theory”: the way many people living with chronic illness count the energy a task will take. Fewer spoons, less effort. Each recipe says what changes the rating, like doing it in one go instead of in stages.</p>
+        <p class="muted">Plain meaning, and mostly the opinion of Yours Truly®.</p>
       </div>
-      <div class="prose-box">
-        <h2>Cooking with Breaks</h2>
-        <p>The steps are laid out so you can see where it’s safe to stop. Each step sits beside the ingredients it uses. A heavy line marks a place to rest, and notes tell you when not to walk away. Tick steps off as you go and the page remembers where you got to.</p>
-        <p>Every recipe has a <strong>helper card</strong> too: the short version, to print and keep by the stove once you know it.</p>
-      </div>
+      <dl>
+        <div><dt><!-- @spoons n="5" --><span>5 spoons</span></dt><dd>A whole thing, for when you’re feeling able to dedicate some time and effort. Worth it at times, especially if it yields lower-spoon meals: it can provide 1-spoon meals for days.</dd></div>
+        <div><dt><!-- @spoons n="4" --><span>4 spoons</span></dt><dd>Cooking several things, or steps where timing matters. Needs some planning, or at least being alert and able to move around for a couple of hours.</dd></div>
+        <div><dt><!-- @spoons n="3" --><span>3 spoons</span></dt><dd>Easy cooking, like a baked potato, pasta or sautéed vegetables. No more than about 20 minutes of one-time effort.</dd></div>
+        <div><dt><!-- @spoons n="2" --><span>2 spoons</span></dt><dd>A simple heat-up or easy assembly, like a sandwich or a tortilla roll-up.</dd></div>
+        <div><dt><!-- @spoons n="1" --><span>1 spoon</span></dt><dd>No prep or heating up. Just eat: pre-packaged snacks, yogurt, pistachios.</dd></div>
+      </dl>
     </div>
   </section>
 </main>

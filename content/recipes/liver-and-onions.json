@@ -1,0 +1,79 @@
+{
+  "title": "Liver & Onions",
+  "course": "Supper",
+  "date": "2026-10-21",
+  "summary": "One hand-sized slice at a time, in about nine minutes.",
+  "time": "About 9 min",
+  "spoons": { "rating": 2 },
+  "intro": ["The same technique works for other livers too: pork, chicken, goose."],
+  "yield": { "label": "Makes", "amount": 1, "unit": "slice" },
+  "equipment": [
+    { "item": "Cutting board" },
+    { "item": "Knife" },
+    { "item": "Fork" }
+  ],
+  "stages": [
+    {
+      "title": "The Cook",
+      "where": "Stove burner at medium",
+      "rows": [
+        {
+          "level": 0,
+          "position": "stand",
+          "time": "3 min",
+          "rule": "stop",
+          "ingredients": [{ "amount": 0.5, "unit": "cup", "item": "sliced (or chopped) onion", "note": "any kind" }],
+          "steps": ["**Assemble** the ingredients and slice the onion."],
+          "pace": { "kind": "stop", "text": "If stopping, just store the onion in an airtight bag." }
+        },
+        {
+          "level": 1,
+          "position": "stand",
+          "time": "1½ min",
+          "ingredients": [
+            { "amount": 3, "unit": "tbsp", "item": "butter and/or EVOO" },
+            { "amount": 1, "unit": "tbsp", "item": "minced garlic", "note": "fresh if possible" },
+            { "item": "Salt", "note": "to taste" }
+          ],
+          "steps": ["**Heat** the butter and/or EVOO, stir in the garlic and salt, and add the onion on top."]
+        },
+        {
+          "level": 2,
+          "position": "stand",
+          "time": "1½ min",
+          "ingredients": [{ "amount": 1, "item": "slice of beef or calf liver", "note": "repeat as wanted" }],
+          "steps": ["**Place** the slice of liver on top of the onion. Cook no more than 90 seconds."],
+          "pace": { "kind": "go", "text": "Timed from here to the end." }
+        },
+        {
+          "level": 3,
+          "position": "stand",
+          "time": "1½ min",
+          "steps": ["**Flip** the liver over and cook no more than 90 seconds."]
+        },
+        {
+          "level": 4,
+          "position": "stand",
+          "time": "1 min",
+          "steps": [
+            "**Flip** it back to the original side. Once the red fluid mostly stops, it’s DONE and must come off immediately.",
+            "**Slide** the liver onto a plate and pour the sauté over it. Enjoy with bread, toast, crackers, or as-is."
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Sauté** {qty:1/2 cup} sliced onion and {qty:1 tbsp} minced garlic in butter or EVOO until almost done.",
+      "**Place** the liver on top of the onion. No more than 90 seconds.",
+      "**Flip** the liver, still on top. No more than 90 seconds.",
+      "**Flip** again. When the red fluid almost stops appearing on top (30 seconds at most), it’s done.",
+      "**Serve** immediately. Or purée it into a beef gravy."
+    ],
+    "keys": [
+      "One hand-sized slice per batch",
+      "Works for pork, chicken and goose liver too"
+    ]
+  }
+}

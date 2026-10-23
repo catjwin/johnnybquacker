@@ -1,0 +1,84 @@
+{
+  "title": "Mussels in Wine & Cream",
+  "course": "Supper",
+  "date": "2026-10-21",
+  "summary": "A pound of mussels in a white wine and cream sauce. The sauce is a safe place to stop.",
+  "time": "About 20 min",
+  "spoons": { "rating": 2 },
+  "yield": { "label": "For", "amount": 1, "unit": "lb mussels" },
+  "equipment": [
+    { "item": "Large pot with a tight-fitting lid" },
+    { "item": "Spatula" },
+    { "item": "Measuring cup and spoons", "note": "If you bother to measure." },
+    { "item": "Oven mitts or a thick towel" }
+  ],
+  "stages": [
+    {
+      "title": "Prep the Sauce",
+      "where": "Stovetop",
+      "rows": [
+        {
+          "level": 0,
+          "position": "stand",
+          "time": "3 min",
+          "ingredients": [
+            { "amount": 2, "amountMax": 4, "unit": "tbsp", "item": "extra virgin olive oil" },
+            { "amount": 1, "amountMax": 3, "unit": "tbsp", "item": "butter", "note": "salted or unsalted, your taste" },
+            { "amount": 0.25, "unit": "cup", "item": "onion", "note": "your taste" },
+            { "amount": 4, "unit": "cloves", "item": "garlic", "note": "your taste" },
+            { "amount": 2, "unit": "tbsp", "item": "thyme" }
+          ],
+          "steps": ["**Sauté** the onion and garlic in the olive oil and butter for a minute, then add the thyme for another minute."]
+        },
+        {
+          "level": 1,
+          "position": "stand",
+          "time": "1 min",
+          "rule": "stop",
+          "ingredients": [{ "amount": 1, "unit": "cup", "item": "white wine" }],
+          "steps": ["**Raise** the heat to very hot. Add the wine and let it boil for 1 minute."],
+          "pace": { "kind": "stop", "text": "This is just a sauce at this point. You can stop, use it for something else, or just quit." }
+        }
+      ]
+    },
+    {
+      "title": "Complete the Dish",
+      "where": "Stovetop, very hot",
+      "rows": [
+        {
+          "level": 0,
+          "position": "stand",
+          "time": "2–3 min",
+          "ingredients": [{ "amount": 1, "unit": "lb", "item": "mussels" }],
+          "steps": ["**Rinse** the mussels and remove any hairy bits showing. (These are called the “beards”.)"]
+        },
+        {
+          "level": 1,
+          "position": "stand",
+          "time": "5–10 min",
+          "ingredients": [
+            { "amount": 0.75, "unit": "cup", "item": "real cream" },
+            { "amount": 2, "unit": "tbsp", "item": "parsley", "note": "to finish" }
+          ],
+          "steps": [
+            "**Add** the mussels to the boiling sauce and cover tightly. Let it boil until all the mussels are open, about 5 minutes or so. If some won’t open, just discard them: they aren’t fit to eat.",
+            "**Add** the cream and stir.",
+            "Enjoy with bread, toast or dry crackers. Lemon juice is nice too."
+          ]
+        }
+      ]
+    }
+  ],
+  "card": {
+    "steps": [
+      "**Sauté** {qty:1/4 cup} onion and {qty:4} cloves garlic in butter and EVOO. When soft, add {qty:2 tbsp} thyme.",
+      "**Rinse** and de-beard {qty:1 lb} mussels.",
+      "**Boil** {qty:1 cup} white wine for 1 minute. Add the mussels, cover, boil until all open (7–10 min). Trash the stubborn ones.",
+      "**Add** {qty:3/4 cup} cream, stir, serve."
+    ],
+    "keys": [
+      "Safe stop: once the wine has boiled, it’s a sauce",
+      "Serve with flatbread, toast, crackers, lemon"
+    ]
+  }
+}

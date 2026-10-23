@@ -398,6 +398,35 @@ html[data-font="easy"] .recipe-body { font-family: 'Atkinson Hyperlegible', Verd
 .pocket__cols { display: flex; flex-wrap: wrap; gap: 0 32px; padding: 16px 18px 4px; }
 .pocket__cols > div { flex: 1 1 220px; }
 
+/* Guide: ingredients to watch for */
+.watch-list { border: 1.5px solid var(--ink); border-top: 6px solid var(--accent); background: var(--card); padding: 18px 22px; display: flex; flex-direction: column; gap: 10px; }
+.watch-list h3 { font-family: var(--display); font-size: 28px; line-height: 1.1; }
+.watch-list ul { margin: 0; padding-left: 22px; columns: 2 220px; column-gap: 32px; }
+.watch-list li { break-inside: avoid; padding-block: 2px; }
+.watch-list .muted { font-size: 16px; }
+
+/* About */
+.about-strap { font-family: var(--fell); font-style: italic; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.35; color: var(--accent); text-align: center; padding-block: 8px; border-block: 4px double var(--ink); }
+.beliefs { margin: 0; padding-left: 24px; display: flex; flex-direction: column; gap: 10px; }
+
+/* Recipes: step labels, step photos, the spoon scale */
+.rung__meta { display: flex; flex-wrap: wrap; gap: 4px 8px; margin: 0; }
+.rung__meta span { font-family: var(--caps); font-size: 13px; letter-spacing: 0.1em; padding: 1px 8px; border: 1px solid var(--muted); color: var(--muted); }
+.gallery { display: flex; flex-direction: column; gap: 14px; }
+.gallery h2 { font-family: var(--display); font-size: clamp(30px, 4vw, 40px); line-height: 1.05; }
+.gallery__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 18px; }
+.gallery figure { margin: 0; display: flex; flex-direction: column; gap: 6px; }
+.gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border: 1.5px solid var(--ink); }
+.gallery figcaption { font-size: 0.85em; line-height: 1.45; color: var(--soft); }
+.spoon-scale { max-width: 860px; margin-inline: auto; border: 1.5px solid var(--ink); background: var(--card); padding: 22px 26px; display: flex; flex-direction: column; gap: 14px; }
+.spoon-scale__head h2 { font-family: var(--display); font-size: 34px; line-height: 1.1; }
+.spoon-scale dl { margin: 0; display: flex; flex-direction: column; }
+.spoon-scale dl > div { display: grid; grid-template-columns: minmax(150px, 0.3fr) 1fr; gap: 6px 20px; padding: 12px 0; border-top: 1px solid var(--rule); }
+.spoon-scale dt { display: flex; align-items: center; gap: 10px; font-family: var(--caps); letter-spacing: 0.1em; color: var(--accent); }
+.spoon-scale dd { margin: 0; }
+@media screen and (max-width: 599px) { .spoon-scale dl > div { grid-template-columns: 1fr; } }
+@media print { .gallery { break-before: page; } .gallery__grid { grid-template-columns: repeat(2, 1fr); } .print-steps .gallery, .print-card .gallery { display: none !important; } }
+
 @page { margin: 0.6in; }
 
 @media print {

@@ -1,0 +1,98 @@
+{
+  "title": "Potato Chips Better Than Bought",
+  "course": "Snacks",
+  "date": "2026-10-23",
+  "summary": "Any potatoes, a vinegar soak, a stable fat. Crisp for weeks.",
+  "photo": "/assets/recipes/potato-chips/cover.jpg",
+  "photoAlt": "A bowl of golden homemade potato chips",
+  "time": "4+ hours, mostly waiting",
+  "spoons": { "rating": 3 },
+  "intro": [
+    "**Any potatoes, according to personal preference.** Soaking in vinegar water removes the starch on the outside, which causes the burning before they’re fully cooked. **DO NOT SKIP.** Forgetting to rinse will leave starch too, so **DO NOT SKIP.**",
+    "When drying on a towel, there’s no need to pat or sift or sort. Time will do the work. Once dried, at least a couple of hours, the slices will feel a bit like leather and won’t be fragile. When adding them to the fryer, add each one separately so they don’t stick together.",
+    "Use a shelf-stable fat, preferably one that’s solid on the shelf: **lard, tallow, coconut.** If you use those nasty refined cooking oils, your chips will go “stale” within a few hours.",
+    "Your chips will stay crispy and crunchy for at least a couple of weeks. With duck, goose, avocado, etc., they’ll lose their crunch in a day or two. EVOO isn’t a good choice, because it needs to be fresh oil every time: it will oxidize (go rancid) quickly."
+  ],
+  "equipment": [
+    { "item": "Small knife", "note": "For cleaning the potatoes." },
+    { "item": "Mandoline", "note": "Set to 2 mm." },
+    { "item": "Safety gloves" },
+    { "item": "Fryer", "note": "A saucepan is awkward, and you need a thermometer to hold the right temperature." },
+    { "item": "Large bowl", "note": "Tossing the chips in seasoning." },
+    { "item": "Big bag or container", "note": "Storage." },
+    { "item": "Big spoon", "note": "Stirring the slices in the water and the fryer." },
+    { "item": "Stir-fry strainer", "note": "Super handy, but not necessary." }
+  ],
+  "stages": [
+    {
+      "title": "The Cook",
+      "where": "Fryer at {temp:320F}, or 1 stove burner on high",
+      "rows": [
+        {
+          "level": 0,
+          "position": "sit",
+          "ingredients": [{ "item": "Potatoes" }],
+          "steps": ["**Slice** to 2 mm thick. A mandoline with safety gloves is easiest."]
+        },
+        {
+          "level": 1,
+          "position": "sit",
+          "rule": "stop",
+          "ingredients": [{ "item": "Hot water and vinegar", "note": "1 cup of vinegar to 1 gallon of water" }],
+          "steps": ["**Stir** in the slices and let them sit AT LEAST 2 hours."],
+          "pace": { "kind": "rest", "text": "At least 2 hours." }
+        },
+        {
+          "level": 2,
+          "position": "sit",
+          "steps": ["**Rinse** the slices until the water runs clear."]
+        },
+        {
+          "level": 3,
+          "position": "sit",
+          "rule": "stop",
+          "steps": ["**Place** on a towel and cover with another towel, AT LEAST 2 hours. No need to pat dry."],
+          "pace": { "kind": "rest", "text": "At least 2 hours." }
+        },
+        {
+          "level": 4,
+          "position": "stand",
+          "time": "12 min a batch",
+          "ingredients": [{ "item": "Lard, tallow or coconut oil", "note": "for the fryer" }],
+          "steps": ["**Fry** in batches. 4 min, flip the slices (a stir-fry strainer is handy). 4 min, flip again. 4 min, tending to the less-done slices with a spoon, until the bubbling stops."],
+          "pace": { "kind": "go", "text": "Have the bowl and seasoning ready: the next step comes right away." }
+        },
+        {
+          "level": 5,
+          "ingredients": [{ "item": "Seasoning", "note": "salt and pepper, sea salt, a Cajun blend, or none" }],
+          "steps": ["**Remove** to a bowl and toss with seasoning. If some aren’t done, just put them back in the fryer."]
+        }
+      ]
+    }
+  ],
+  "photos": [
+    { "src": "/assets/recipes/potato-chips/step-1.jpg", "caption": "Chips happily sitting in water so they don’t get icky from exposure to air." },
+    { "src": "/assets/recipes/potato-chips/step-2.jpg", "caption": "Chips in vinegar water. Notice the bit of foam starting: that’s the starch coming off." },
+    { "src": "/assets/recipes/potato-chips/step-3.jpg", "caption": "The pot of plain water on the right is the wash-the-starch-off bath." },
+    { "src": "/assets/recipes/potato-chips/step-4.jpg", "caption": "A stir-fry strainer moves them to a clean kitchen towel for draining. No, you don’t need to pat dry and get OCD about it." },
+    { "src": "/assets/recipes/potato-chips/step-5.jpg", "caption": "Put the chips in the basket first. Dropping them into the oil will splatter on you, which is unpleasant." },
+    { "src": "/assets/recipes/potato-chips/step-6.jpg", "caption": "See the chips happily frying? When the bubbles stop (the water has boiled out of the chips), they’re done." },
+    { "src": "/assets/recipes/potato-chips/step-7.jpg", "caption": "Still in the oil, these are ready to dump in a bowl, season and toss right away." },
+    { "src": "/assets/recipes/potato-chips/step-8.jpg", "caption": "Any seasoning will do. Or none. My favorite is salt and pepper. These 2 mm chips are strong enough for dipping. Saint Julia would be quite proud of what you did in your own kitchen. Bon appétit!" }
+  ],
+  "card": {
+    "steps": [
+      "**Slice** thinly. 2 mm is strong for dipping; 1.5 mm will be delicate.",
+      "**Soak** in hot water and vinegar at least 2 hours (1 cup vinegar to 1 gallon water). The water goes cloudy: that’s the starch.",
+      "**Rinse** until the water isn’t cloudy.",
+      "**Drip-dry** on a towel, covered by a towel, at least 2 hours. They should feel slightly leathery.",
+      "**Fry** 4 min, flip. 4 min, flip. 4 min. When the bubbling stops, they’re done.",
+      "**Toss** with seasoning in a bowl. Not done? Back in the fryer."
+    ],
+    "keys": [
+      "Fryer: {temp:320F}",
+      "Lard, tallow or coconut: crisp for weeks",
+      "Never skip the soak or the rinse"
+    ]
+  }
+}
