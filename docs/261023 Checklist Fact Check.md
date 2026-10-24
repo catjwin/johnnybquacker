@@ -84,3 +84,16 @@ Every factual claim that's on the site, or headed for it, from Dad's material an
 | 51 | Ranch: onion flakes and parsley at twice the other spices (full recipe) vs equal parts with dill doubled (card) | Ranch files | The site uses the card's ratio | ⬜ |
 | 52 | "The longest standing step in any recipe is 10 minutes or less" | `index.docx` | Potato chips fry for 12 minutes a batch. The sentence is left off the site for now | ⬜ |
 | 53 | Sourdough salt: "2–4 TBS" for 4 cups of flour | `4DaySourDough old format.odt` | Bread is usually ~2% salt (~2 tsp for 4 cups). Check before sourdough goes up | ⬜ |
+
+### How Food Affects You articles (added 24 Oct)
+| # | Claim | Where | First read | Status |
+|---|---|---|---|---|
+| 54 | If your grandparents experienced famine, your body chemistry remembers it | Questions article | Supported in part: Dutch Hunger Winter (children of exposed mothers) and the Överkalix studies (grandparents). Effects in the grandchildren of humans are still debated. Add sources | ⬜ |
+| 55 | Epigenetic memory works through enzymes and such that influence how DNA behaves | Questions article | Broadly right (DNA methylation, histone changes) | ⬜ |
+| 56 | "Yes, generations are affected by bad food" | Questions article | His conclusion from #54; reads as opinion | ✏️ |
+| 57 | "Silicon dioxide" = "sand" | Questions article | Sand is mostly silicon dioxide; food-grade silica is usually made synthetically. Fine as a jargon example | ✏️ |
+| 58 | Why flour is enriched and salt is iodized | Questions article | Questions only. If answered later: iodized salt dates from 1924 (goiter); enrichment from the early 1940s (pellagra, beriberi) | ⬜ |
+| 59 | Mercury for syphilis, leeching for fever, cocaine for morphine addiction, amphetamines and phen-fen as diet pills | Just a Mere Trace | All historically documented | ⬜ |
+| 60 | Trans fats (Crisco) marketed as modern, clean and kosher | Just a Mere Trace | Documented: Crisco was advertised as kosher from 1912 | ⬜ |
+| 61 | Lead, asbestos, tobacco and second-hand smoke were long called safe in small amounts | Just a Mere Trace | Broadly documented | ⬜ |
+| 62 | Held back from Just a Mere Trace: "arsenic as a cure for cancer" (arsenic trioxide is a current, effective leukemia treatment), "Ozempic as a diet pill", "opioids as a cure for heroin addiction", "seed oils sold as a cure for a non-existent cholesterol problem" | `tmp Guides.pptx` | Need care or rewording before publishing | ⬜ |

@@ -428,6 +428,17 @@ html[data-font="easy"] .recipe-body { font-family: 'Atkinson Hyperlegible', Verd
 @media screen and (max-width: 599px) { .spoon-scale dl > div { grid-template-columns: 1fr; } }
 @media print { .gallery { break-before: page; } .gallery__grid { grid-template-columns: repeat(2, 1fr); } .print-steps .gallery, .print-card .gallery { display: none !important; } }
 
+/* Effects articles: the two questions, tactic lists, trace lists */
+.two-questions { display: flex; flex-direction: column; gap: 6px; padding: 18px 0; border-block: 4px double var(--ink); text-align: center; }
+.two-questions p { font-family: var(--display); font-size: clamp(28px, 3.6vw, 40px); line-height: 1.15; color: var(--accent); }
+.tactics { margin: 0; display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
+.tactics > div { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr); gap: 4px 20px; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.tactics dt { font-weight: 700; }
+.tactics dd { margin: 0; font-family: var(--fell); font-style: italic; font-size: 1.05em; color: var(--soft); }
+.trace-list { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+.trace-list li { padding: 4px 12px; border: 1.5px solid var(--ink); background: var(--card); font-family: var(--caps); letter-spacing: 0.06em; }
+@media screen and (max-width: 599px) { .tactics > div { grid-template-columns: 1fr; } }
+
 @page { margin: 0.6in; }
 
 @media print {
