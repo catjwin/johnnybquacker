@@ -6,14 +6,15 @@ Status as of 23 Oct 2026. ✅ built · ✏️ built, needs Johnny's text · 💡
 
 - **What it is:** food as the way into health. Johnny shares what worked for him, the hard way.
 - **Umbrella (from Johnny's messages):** health is the whole point: body, mind, money, and the freedom to live with the least risk. Food comes first. Money and security sit under the same idea later rather than as separate pillars.
-- **Strapline:** ✅ "Feel better, spend less, risk less." (chosen 23 Oct 2026). It sits under the name in the header and in the home page title. "Real food, plainly cooked." stays as the line on the home page's label, so the food focus is still the first thing people read.
+- **Home headline:** ✅ "Feel Better, Spend Less, and Live Safely" (Dad's outline; chosen 24 Oct 2026), with "If it don't grow on its own, just say no." under it.
+- **Header strapline:** ✅ "Plain talk on food and health" (24 Oct 2026).
   - Spare: "…lessons learned the hard way." for an About page or a sign-off.
 - **Voice:** see `261023 Guide Tone of Voice.md`.
 
 ## Pages
 
 ### Home ✅
-Hero with Johnny's opening lines, the three remedies, the food-supply chronicle, the Kitchen Prescription, latest articles, the newest recipes, and newsletter sign-up.
+Hero with Johnny's opening lines, where to start (four sections), the food-supply chronicle, the Kitchen Prescription, latest articles, the newest recipes, and newsletter sign-up.
 
 ### 1. What Went Wrong (history)
 - ✏️ How the American food supply went wrong (1906 → 1992)
@@ -23,6 +24,15 @@ Hero with Johnny's opening lines, the three remedies, the food-supply chronicle,
 - 💡 How corn became everything
 - 💡 The low-fat years
 - 💡 Why it's not your fault: a century of wars and distraction
+
+### How Food Affects You (added 24 Oct)
+Section page built, articles to come. Drawn from Dad's material; health claims go through the fact-check list and are framed as his experience.
+- 💡 Never ever before: what we eat that no one ever has (`NeverBefore.odp`)
+- 💡 Fats, explained: stable, semi-stable, unstable (`tmp Guides.pptx`)
+- 💡 What refining does to an oil (`WTF.odp`)
+- 💡 Inflammation, explained (`Non-Toxic.docx`)
+- 💡 Healing takes longer than stopping (his note to Mikey)
+- 💡 The 7-minute test (wallet card)
 
 ### 2. Non-Toxic Eating (guide)
 - ✅ Reading a label in ten seconds

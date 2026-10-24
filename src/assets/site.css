@@ -107,6 +107,7 @@ img.photo { width: 100%; padding: 0; object-fit: cover; }
 
 .cards { display: flex; flex-wrap: wrap; gap: 28px; }
 .cards > * { flex: 1 1 300px; min-width: 0; }
+.cards--four > * { flex-basis: 230px; }
 .split { display: flex; flex-wrap: wrap; gap: 40px; }
 .split > * { flex: 1 1 420px; min-width: 0; }
 
@@ -126,13 +127,13 @@ img.photo { width: 100%; padding: 0; object-fit: cover; }
 .hero .note { font-size: 15px; font-style: italic; color: var(--muted); }
 @media (max-width: 899px) { .hero__blurb { order: -1; } }
 
-/* ---------- Home: remedies ---------- */
+/* ---------- Home: where to start ---------- */
 
-.remedy { padding: 26px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; text-decoration: none; }
-.remedy__title { font-family: var(--display); font-size: 36px; line-height: 1.02; }
-.remedy__sub { font-family: var(--fell); font-style: italic; font-size: 19px; color: var(--muted); }
-.remedy .photo { width: 100%; height: 170px; margin-block: 8px; }
-.remedy p { font-size: 16px; line-height: 1.55; }
+.start-card { padding: 26px 24px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; text-decoration: none; }
+.start-card__title { font-family: var(--display); font-size: 36px; line-height: 1.02; }
+.start-card__sub { font-family: var(--fell); font-style: italic; font-size: 19px; color: var(--muted); }
+.start-card .photo { width: 100%; height: 170px; margin-block: 8px; }
+.start-card p { font-size: 16px; line-height: 1.55; }
 
 /* ---------- Chronicle (green band) ---------- */
 
@@ -145,21 +146,21 @@ img.photo { width: 100%; padding: 0; object-fit: cover; }
 .chronicle p { font-size: 16px; line-height: 1.5; }
 .center-link { display: block; width: fit-content; margin: 28px auto 0; padding-block: 10px; font-family: var(--caps); font-size: 17px; letter-spacing: 0.12em; }
 
-/* ---------- Kitchen Prescription (swap list) ---------- */
+/* ---------- Simple Swaps ---------- */
 
-.rx { background: var(--card); border: 1.5px solid var(--ink); padding: 26px 28px; display: flex; flex-direction: column; }
-.rx--narrow { max-width: 760px; margin-inline: auto; }
-.rx__head { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
-.rx__mark { font-family: var(--display); font-size: 44px; line-height: 1; color: var(--accent); }
-.rx h2 { font-family: var(--display); font-size: 30px; line-height: 1.05; }
-.rx__sub { font-family: var(--fell); font-style: italic; font-size: 17px; color: var(--muted); }
-.rx table { width: 100%; border-collapse: collapse; font-size: 17px; }
-.rx th { padding: 10px 0 6px; font-family: var(--caps); font-weight: 400; font-size: 13px; letter-spacing: 0.16em; color: var(--muted); text-align: left; }
-.rx td { width: 50%; padding: 10px 16px 10px 0; border-top: 1px dotted var(--ink); vertical-align: top; }
-.rx tr:last-child td { border-bottom: 1px dotted var(--ink); }
-.rx td:first-child { color: var(--muted); font-style: italic; }
-.rx__foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; padding-top: 14px; }
-.rx__foot a { font-family: var(--caps); font-size: 16px; letter-spacing: 0.1em; padding-block: 10px; }
+.swaps { background: var(--card); border: 1.5px solid var(--ink); padding: 26px 28px; display: flex; flex-direction: column; }
+.swaps--narrow { max-width: 760px; margin-inline: auto; }
+.swaps__head { display: flex; align-items: baseline; gap: 14px; border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+.swaps__tag { align-self: center; font-family: var(--caps); font-size: 14px; letter-spacing: 0.16em; color: var(--paper); background: var(--accent); padding: 4px 10px; }
+.swaps h2 { font-family: var(--display); font-size: 30px; line-height: 1.05; }
+.swaps__sub { font-family: var(--fell); font-style: italic; font-size: 17px; color: var(--muted); }
+.swaps table { width: 100%; border-collapse: collapse; font-size: 17px; }
+.swaps th { padding: 10px 0 6px; font-family: var(--caps); font-weight: 400; font-size: 13px; letter-spacing: 0.16em; color: var(--muted); text-align: left; }
+.swaps td { width: 50%; padding: 10px 16px 10px 0; border-top: 1px dotted var(--ink); vertical-align: top; }
+.swaps tr:last-child td { border-bottom: 1px dotted var(--ink); }
+.swaps td:first-child { color: var(--muted); font-style: italic; }
+.swaps__foot { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 12px; padding-top: 14px; }
+.swaps__foot a { font-family: var(--caps); font-size: 16px; letter-spacing: 0.1em; padding-block: 10px; }
 
 /* ---------- Index lists with dotted leaders ---------- */
 
