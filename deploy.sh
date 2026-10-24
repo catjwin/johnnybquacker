@@ -4,8 +4,9 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-HOST=winsorlabs-deploy
-REMOTE_DIR=/opt/winsorlabs/caddy/site/johnnybquacker   # /srv/site/johnnybquacker inside the Caddy container
+# Defaults are the preview on the winsorlabs VPS; override all three to deploy anywhere else over SSH.
+HOST=${DEPLOY_HOST:-winsorlabs-deploy}
+REMOTE_DIR=${DEPLOY_DIR:-/opt/winsorlabs/caddy/site/johnnybquacker}   # /srv/site/johnnybquacker inside the Caddy container
 URL=${SITE_URL:-https://jbq.winsorlabs.uk}
 
 today=$(TZ=Europe/London date +%y%m%d)

@@ -1,6 +1,7 @@
 # Open items
 
 ## Needs Dad
+0. Handover: Dad makes a GitHub account, then gets added to this repo as a collaborator (`gh api -X PUT repos/catjwin/johnnybquacker/collaborators/<his username>`). He starts from `docs/261024 Guide Handover for Dad.md`.
 1. Switch DNS at dotEarth: `docs/261023 Instructions dotEarth DNS Switch.md`.
 2. Approve the About page (put together from his texts) and the Kitchen Prescription (rebuilt from his pocket guide), and add his contact details to About.
 3. Check the ten recipes as typed up from his sheets, and the Quick Reference Cards I wrote where he had none (Birria, Paella, Cornbread, Snickerdoodles). Pork Belly needs an intro and a spoons rating.
